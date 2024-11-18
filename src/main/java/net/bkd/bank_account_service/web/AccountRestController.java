@@ -1,7 +1,11 @@
 package net.bkd.bank_account_service.web;
 
+import net.bkd.bank_account_service.dto.BankAccountRequestDTO;
+import net.bkd.bank_account_service.dto.BankAccountResponseDTO;
 import net.bkd.bank_account_service.entities.BankAccount;
+import net.bkd.bank_account_service.mappers.AccountMapper;
 import net.bkd.bank_account_service.repositories.BankAccountRepository;
+import net.bkd.bank_account_service.service.AccountService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Date;
@@ -15,9 +19,13 @@ public class AccountRestController {
 
     //Injection de la couche repository pour acceder à la base de donnée
     private BankAccountRepository bankAccountRepository;
+    private AccountService accountService;
+    private AccountMapper accountMapper;
 
-    public AccountRestController(BankAccountRepository bankAccountRepository) {
+    public AccountRestController(BankAccountRepository bankAccountRepository, AccountService accountService, AccountMapper accountMapper) {
         this.bankAccountRepository = bankAccountRepository;
+        this.accountService = accountService;
+        this.accountMapper = accountMapper;
     }
     //Consulter les comptes banquaires
     @GetMapping("/bankAccounts")
@@ -33,9 +41,9 @@ public class AccountRestController {
     }
     //Ajout d'un compte
     @PostMapping("/bankAccounts")
-    public BankAccount save(@RequestBody BankAccount bankAccount){
-        if(bankAccount.getId()==null) bankAccount.setId(UUID.randomUUID().toString());
-        return bankAccountRepository.save(bankAccount);
+    public BankAccountResponseDTO save(@RequestBody BankAccountRequestDTO requestDTO){
+        //if(bankAccount.getId()==null) bankAccount.setId(UUID.randomUUID().toString());
+        return accountService.addACCOUNT(requestDTO);
     }
     //Maitre à jour un compte qui existe déjà
     @PutMapping("/bankAccounts/{id}")
