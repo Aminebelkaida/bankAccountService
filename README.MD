@@ -52,7 +52,59 @@
 
 <h3>Projections dans Spring Data REST : Pour personnaliser les données exposées </h3>
 <img src="Captures/25.PNG">
-<img src="Captures/26.PNG">
+<img src="Captures/26.PNG"> 
+
+<h2>GraphQL</h2>
+
+<h3>Schéma</h3>
+<img src="Captures/27.PNG"> 
+
+<h3>Dans le package web, on va créer la classe: </3>
+<img src="Captures/28.PNG">  
+
+<h3>Configuration:</h3>
+<img src="Captures/29.PNG"> 
+
+<h3>GraphiQL : Interfaces pour tester et explorer l'API GraphQL</h3>
+<img src="Captures/30.PNG"> 
+
+<h3>Requête (Query) : Récupèrent des données</h3>
+<img src="Captures/31.PNG">
+<img src="Captures/32.PNG">
+<img src="Captures/33.PNG">
+<img src="Captures/34.PNG">
+<h3>Ajouter la classe CustomDataFetcherExceptionResolver: pour gérer les exeptions</h3>
+<img src="Captures/35.PNG">
+<img src="Captures/36.PNG"> 
+
+<h3>Mutations : Modifient ou ajoutent des données (équivalent de POST, PUT, DELETE en REST)</h3>
+<img src="Captures/37.PNG">
+<img src="Captures/38.PNG">
+<img src="Captures/39.PNG">
+<img src="Captures/40.PNG">
+<img src="Captures/41.PNG">
+<img src="Captures/42.PNG">
+
+<h2>Ajouter l'entité Customer</h2>
+<img src="Captures/43.PNG">
+<img src="Captures/44.PNG">
+<img src="Captures/45.PNG">
+<img src="Captures/46.PNG">
+<img src="Captures/47.PNG">
+<img src="Captures/48.PNG">
+<img src="Captures/49.PNG">
+<img src="Captures/50.PNG">
+<img src="Captures/51.PNG">
+<img src="Captures/52.PNG">
+<img src="Captures/53.PNG">
+
+
+
+
+
+
+
+
 
 
 

@@ -43,7 +43,7 @@ public class AccountRestController {
     @PostMapping("/bankAccounts")
     public BankAccountResponseDTO save(@RequestBody BankAccountRequestDTO requestDTO){
         //if(bankAccount.getId()==null) bankAccount.setId(UUID.randomUUID().toString());
-        return accountService.addACCOUNT(requestDTO);
+        return accountService.addAccount(requestDTO);
     }
     //Maitre à jour un compte qui existe déjà
     @PutMapping("/bankAccounts/{id}")
