@@ -73,7 +73,7 @@
 <img src="Captures/32.PNG">
 <img src="Captures/33.PNG">
 <img src="Captures/34.PNG">
-<h3>Ajouter la classe CustomDataFetcherExceptionResolver: pour gérer les exeptions</h3>
+<h3>Ajouter la classe CustomDataFetcherExceptionResolver: pour gérer les exceptions</h3>
 <img src="Captures/35.PNG">
 <img src="Captures/36.PNG"> 
 
